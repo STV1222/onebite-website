@@ -1,0 +1,14 @@
+# Screenshots (add your actual screenshots, but ignore this file)
+# screenshot-*.png
+# hero.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
