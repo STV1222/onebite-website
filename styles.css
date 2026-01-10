@@ -70,7 +70,17 @@ body {
 }
 
 .logo-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-icon-fallback {
     font-size: 32px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .logo-text {
