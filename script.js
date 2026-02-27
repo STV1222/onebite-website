@@ -18,7 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const appStoreLink = document.getElementById('app-store-link');
 if (appStoreLink) {
     // Replace with your actual App Store URL when available
-    appStoreLink.href = 'https://apps.apple.com/app/onebite/idYOUR_APP_ID';
+    appStoreLink.href = 'https://apps.apple.com/app/onebite/id6754983791';
 }
 
 // Navbar scroll effect
