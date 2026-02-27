@@ -62,11 +62,11 @@
                     <div class="phone-mockup">
                         <div class="phone-frame">
                             <div class="phone-screen">
-                                <!-- Placeholder for hero screenshot - replace with actual image -->
-                                <img src="screenshots/hero.png" alt="OneBite App" id="hero-screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                                <div class="screenshot-placeholder" style="display: none;">
-                                    <span>Hero Screenshot</span>
-                                </div>
+                                <video autoplay loop muted playsinline poster="screenshots/hero.png" style="width: 100%; height: 100%; object-fit: cover;">
+                                    <source src="assets/demo.mp4" type="video/mp4">
+                                    <!-- Fallback image if video fails -->
+                                    <img src="screenshots/hero.png" alt="OneBite App Demo" style="width: 100%; height: 100%; object-fit: cover;">
+                                </video>
                             </div>
                         </div>
                     </div>
