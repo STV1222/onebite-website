@@ -1,4 +1,4 @@
-<!-- OneBite Website v1.1 - Updated App Store Links -->
+<!-- OneBite Website v1.2 - Fixed App Store Badge Fallback -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -229,7 +229,7 @@
                 <h2 class="download-title">Start your culinary journey today</h2>
                 <p class="download-subtitle">Download OneBite and begin mapping every bite</p>
                 <a href="https://apps.apple.com/app/onebite/id6754983791" class="app-store-badge" id="app-store-link">
-                    <img src="https://tools.applemediaservices.com/api/badges/download-app-store/black/en-us?size=250x83&releaseDate=1704067200" alt="Download on the App Store" onerror="this.style.display='none';">
+                    <img src="https://tools.applemediaservices.com/api/badges/download-app-store/black/en-us?size=250x83&releaseDate=1704067200" alt="Download on the App Store" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" onload="if(this.naturalWidth===0) { this.style.display='none'; this.nextElementSibling.style.display='inline-block'; }">
                     <div class="app-store-fallback" style="display: none;">
                         <span>Download on the App Store</span>
                     </div>
@@ -272,6 +272,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="script-lightbox.js"></script>
 </body>
 </html>
 

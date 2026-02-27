@@ -63,7 +63,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Screenshot lightbox (optional enhancement)
+// Check if App Store badge loaded
+window.addEventListener('load', () => {
+    const badgeImg = document.querySelector('.app-store-badge img');
+    if (badgeImg) {
+        // Force check
+        if (badgeImg.naturalWidth === 0 || badgeImg.naturalHeight === 0) {
+             handleBadgeError(badgeImg);
+        }
+    }
+});
+
+function handleBadgeError(img) {
+    if (!img) return;
+    img.style.display = 'none';
+    const fallback = img.nextElementSibling;
+    if (fallback) {
+        fallback.style.display = 'inline-block';
+    }
+}
+
 const screenshotFrames = document.querySelectorAll('.screenshot-frame');
 screenshotFrames.forEach(frame => {
     frame.addEventListener('click', function() {
